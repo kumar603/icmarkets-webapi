@@ -14,6 +14,7 @@ namespace CIMarkets.Blockchain.Infrastructure.Data
         }
 
         public DbSet<BlockchainRecord> BlockchainRecords { get; set; }
+        public DbSet<PaymentTransaction> PaymentTransactions { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -21,6 +22,7 @@ namespace CIMarkets.Blockchain.Infrastructure.Data
 
             // Apply all entity configurations
             modelBuilder.ApplyConfiguration(new Configurations.BlockchainRecordConfiguration());
+            modelBuilder.ApplyConfiguration(new Configurations.PaymentTransactionConfiguration());
         }
     }
 }

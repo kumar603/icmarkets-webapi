@@ -205,7 +205,7 @@ Root Directory/
 
 ---
 
-## 📊 Database Schema
+## 📊 Database Structure
 
 ### BlockchainRecords Table
 ```sql

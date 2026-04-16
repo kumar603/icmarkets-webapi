@@ -1,3 +1,16 @@
+/*
+ * File: FetchAndStoreCommand.cs
+ * Author: Kiran Kumar
+ * Date: April 16, 2026
+ * Purpose: CQRS command for fetching blockchain data from external API and storing locally
+ * 
+ * Usage: Sent by the BlockchainController when user requests blockchain data sync.
+ *        Processed by FetchAndStoreCommandHandler which coordinates API calls and persistence.
+ *        Returns CommandResult with success status, message, and stored blockchain record response.
+ * 
+ * Dependencies: BlockchainType enum, CommandResult class, MediatR
+ */
+
 using CIMarkets.Blockchain.Domain.Enums;
 using MediatR;
 

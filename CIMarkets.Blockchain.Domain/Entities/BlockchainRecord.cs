@@ -1,3 +1,16 @@
+/*
+ * File: BlockchainRecord.cs
+ * Author: Kiran Kumar
+ * Date: April 16, 2026
+ * Purpose: Domain entity representing a blockchain data record
+ * 
+ * Usage: This entity is used to store blockchain data fetched from external APIs. 
+ *        It contains the complete JSON response, blockchain type identifier, and creation timestamp.
+ *        Used throughout the application for data persistence and retrieval.
+ * 
+ * Dependencies: BlockchainType enum
+ */
+
 using CIMarkets.Blockchain.Domain.Enums;
 
 namespace CIMarkets.Blockchain.Domain.Entities

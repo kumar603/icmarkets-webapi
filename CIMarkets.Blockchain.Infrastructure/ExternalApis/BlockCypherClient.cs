@@ -1,3 +1,18 @@
+/*
+ * File: BlockCypherClient.cs
+ * Author: Kiran Kumar
+ * Date: April 16, 2026
+ * Purpose: HTTP client for BlockCypher blockchain data API integration
+ * 
+ * Usage: Implements IBlockCypherClient interface.
+ *        Fetches blockchain data for Bitcoin, Ethereum, Litecoin, and Dash.
+ *        Supports optional address parameter, configurable timeout, and error handling.
+ *        All methods are async to prevent blocking HTTP operations.
+ * 
+ * Dependencies: IBlockCypherClient interface, HttpClient, BlockCypherOptions configuration,
+ *              ILogger, ExternalApiException, IOptions pattern
+ */
+
 using CIMarkets.Blockchain.Application.Commands.Handlers;
 using CIMarkets.Blockchain.Domain.Exceptions;
 using Microsoft.Extensions.Logging;

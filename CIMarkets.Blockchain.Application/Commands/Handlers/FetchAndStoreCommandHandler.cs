@@ -1,3 +1,18 @@
+/*
+ * File: FetchAndStoreCommandHandler.cs
+ * Author: Kiran Kumar
+ * Date: April 16, 2026
+ * Purpose: CQRS command handler for fetching and storing blockchain data
+ * 
+ * Usage: Implements MediatR IRequestHandler to process FetchAndStoreCommand.
+ *        Validates input, fetches data from BlockCypher API in parallel (Task.WhenAll),
+ *        stores record via repository, and returns result with stored data.
+ *        Key feature: Parallel blockchain API calls for concurrent fetch operations.
+ * 
+ * Dependencies: IBlockCypherClient, IUnitOfWork, IBlockchainRecordRepository,
+ *              FluentValidation, MediatR, BlockchainType enum
+ */
+
 using CIMarkets.Blockchain.Application.Commands;
 using CIMarkets.Blockchain.Domain.Entities;
 using CIMarkets.Blockchain.Domain.Exceptions;

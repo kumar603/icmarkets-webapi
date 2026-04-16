@@ -1,3 +1,16 @@
+/*
+ * File: FetchAndStoreValidator.cs
+ * Author: Kiran Kumar
+ * Date: April 16, 2026
+ * Purpose: FluentValidation validator for FetchAndStoreCommand
+ * 
+ * Usage: Validates user input before processing FetchAndStoreCommand.
+ *        Ensures blockchain type is valid and address format is correct.
+ *        Prevents invalid requests from reaching the command handler.
+ * 
+ * Dependencies: FluentValidation, FetchAndStoreCommand, BlockchainType enum
+ */
+
 using CIMarkets.Blockchain.Application.Commands;
 using CIMarkets.Blockchain.Domain.Enums;
 using FluentValidation;

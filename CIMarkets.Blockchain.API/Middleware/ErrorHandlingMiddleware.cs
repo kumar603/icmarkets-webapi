@@ -1,3 +1,16 @@
+/*
+ * File: ErrorHandlingMiddleware.cs
+ * Author: Kiran Kumar
+ * Date: April 16, 2026
+ * Purpose: Global exception handling middleware for standardized error responses
+ * 
+ * Usage: Intercepts all unhandled exceptions in the request pipeline.
+ *        Converts exceptions to standardized ErrorResponse JSON format.
+ *        Logs errors with structured logging (Serilog) for audit trails.
+ * 
+ * Dependencies: ILogger, System.Net, System.Text.Json
+ */
+
 using System.Net;
 using System.Text.Json;
 

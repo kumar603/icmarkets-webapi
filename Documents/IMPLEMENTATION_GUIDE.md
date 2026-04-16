@@ -104,7 +104,7 @@ Data/
 
 **BlockchainRecordConfiguration**
 - Fluent API configuration
-- Table schema definition
+- Table Structure definition
 - Index creation (BlockchainType + CreatedAt DESC)
 
 ### Repositories (`Repositories/`)
@@ -321,7 +321,7 @@ return results.First();
 
 ---
 
-## 8. Database Schema
+## 8. Database Structure
 
 ### Single Table Design
 ```sql

@@ -1,3 +1,16 @@
+/*
+ * File: GetBlockchainHistoryQuery.cs
+ * Author: Kiran Kumar
+ * Date: April 16, 2026
+ * Purpose: CQRS query for retrieving paginated blockchain data history
+ * 
+ * Usage: Sent by BlockchainController to retrieve historical blockchain records.
+ *        Processed by GetBlockchainHistoryQueryHandler which queries repository with pagination.
+ *        Returns BlockchainHistoryResponse with records sorted by CreatedAt (descending).
+ * 
+ * Dependencies: BlockchainType enum, BlockchainHistoryResponse class, MediatR
+ */
+
 using CIMarkets.Blockchain.Domain.Enums;
 using MediatR;
 

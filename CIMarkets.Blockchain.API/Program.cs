@@ -1,3 +1,23 @@
+/*
+ * File: Program.cs
+ * Author: Kiran Kumar
+ * Date: April 16, 2026
+ * Purpose: Application entry point and ASP.NET Core bootstrap configuration
+ * 
+ * Usage: Configures the web host, dependency injection container, middleware pipeline,
+ *        Serilog logging, health checks, CORS, and database initialization.
+ *        Sets up MediatR CQRS handlers, validation, AutoMapper profiles, and Swagger/OpenAPI.
+ * 
+ * Key Configuration:
+ *   - Serilog: Console + daily rolling file logs
+ *   - Health Checks: Database connectivity check
+ *   - Middleware: Error handling, CORS, routing
+ *   - Database: SQLite with EF Core auto-migration
+ *   - OpenAPI: Swagger UI for endpoint documentation
+ * 
+ * Dependencies: All infrastructure services, MediatR, Serilog, AutoMapper
+ */
+
 using CIMarkets.Blockchain.API.Extensions;
 using CIMarkets.Blockchain.API.Middleware;
 using CIMarkets.Blockchain.Infrastructure.Configuration;

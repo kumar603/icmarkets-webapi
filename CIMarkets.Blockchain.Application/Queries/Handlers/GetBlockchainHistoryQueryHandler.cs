@@ -1,3 +1,16 @@
+/*
+ * File: GetBlockchainHistoryQueryHandler.cs
+ * Author: Kiran Kumar
+ * Date: April 16, 2026
+ * Purpose: CQRS query handler for retrieving blockchain data history
+ * 
+ * Usage: Implements MediatR IRequestHandler to process GetBlockchainHistoryQuery.
+ *        Queries repository with pagination parameters, applies sorting by CreatedAt descending.
+ *        Returns paginated results with total count for client-side pagination.
+ * 
+ * Dependencies: IBlockchainRecordRepository, MediatR, GetBlockchainHistoryQuery
+ */
+
 using CIMarkets.Blockchain.Domain.Repositories;
 using MediatR;
 using Microsoft.Extensions.Logging;

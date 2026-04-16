@@ -1,3 +1,16 @@
+/*
+ * File: BlockchainRecordConfiguration.cs
+ * Author: Kiran Kumar
+ * Date: April 16, 2026
+ * Purpose: Entity Framework Core fluent configuration for BlockchainRecord
+ * 
+ * Usage: Configures the BlockchainRecord entity mapping for database.
+ *        Defines table name, column mappings, composite index on (BlockchainType, CreatedAt).
+ *        Applied by BlockchainDbContext via modelBuilder.ApplyConfiguration().
+ * 
+ * Dependencies: BlockchainRecord entity, EntityTypeBuilder, Microsoft.EntityFrameworkCore
+ */
+
 using CIMarkets.Blockchain.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;

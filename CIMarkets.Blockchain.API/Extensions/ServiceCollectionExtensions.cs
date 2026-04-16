@@ -1,3 +1,22 @@
+/*
+ * File: ServiceCollectionExtensions.cs
+ * Author: Kiran Kumar
+ * Date: April 16, 2026
+ * Purpose: Dependency Injection and service configuration extensions
+ * 
+ * Usage: Extension methods for IServiceCollection and WebApplicationBuilder.
+ *        Configures Application Services (MediatR, AutoMapper, Validators),
+ *        CORS policies, structured logging with Serilog, and health checks.
+ * 
+ * Methods:
+ *   AddApplicationServices() - Register MediatR, AutoMapper, FluentValidation
+ *   AddCorsPolicy() - Configure CORS for cross-origin requests
+ *   AddLogging() - Setup Serilog with console and file sinks
+ * 
+ * Dependencies: MediatR, AutoMapper, FluentValidation, Serilog,
+ *              Microsoft.AspNetCore.Builder, Microsoft.Extensions.DependencyInjection
+ */
+
 using AutoMapper;
 using FluentValidation;
 using MediatR;
