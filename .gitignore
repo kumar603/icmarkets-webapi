@@ -1,0 +1,36 @@
+## dotnet
+bin/
+obj/
+*.csproj.user
+*.sln.user
+
+## Logs
+logs/
+*.log
+
+## Database
+*.db
+*.sqlite
+*.sqlite3
+
+## IDE
+.vs/
+.vscode/
+*.code-workspace
+.ideaIdea
+*.swp
+*.swo
+*~
+
+## OS
+.DS_Store
+Thumbs.db
+
+## Environment
+.env
+.env.local
+.env.*.local
+
+## Build output
+dist/
+build/
